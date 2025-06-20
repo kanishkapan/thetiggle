@@ -14,6 +14,13 @@ import TiggleImage from './components/AboutUs/TiggleImage'
 import Storycard2 from './components/AboutUs/storycard2'
 import TiggleCocoaSection from './components/AboutUs/TiggleCocoaSection'
 import TiggleBuyNowSection from './components/AboutUs/TiggleBuyNowSection '
+import AnuvaBlogSection from './components/AboutUs/AnuvaBlogSection'
+import IcedChocolatePromo from './components/ShopPage/IcedChocolatePromo'
+import ProductCards from './components/ShopPage/ProductCards'
+import SummerBestSeller from './components/ShopPage/SummerBestSeller'
+import OrderForm from './components/ShopPage/OrderForm'
+import InfoSection from './components/ShopPage/InfoSection'
+import SubscriptionSection from './components/ShopPage/SubscriptionSection'
 const App = () => {
   return (
    <div>
@@ -45,6 +52,19 @@ const App = () => {
        <TiggleCocoaSection/>
        <WeHearYou/>
        <TiggleBuyNowSection/>
+       <WeHearYou/>
+       <AnuvaBlogSection/>
+       <WeHearYou/>
+       <IcedChocolatePromo/>
+       <ProductCards/>
+       <SummerBestSeller/>
+            <WeHearYou/>
+                 <OrderForm/>
+                   <WeHearYou/>
+                   <InfoSection/>
+                   <WeHearYou/>
+                   <SubscriptionSection/>
+
 
 
    </div>
