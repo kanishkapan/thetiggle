@@ -21,6 +21,15 @@ import SummerBestSeller from './components/ShopPage/SummerBestSeller'
 import OrderForm from './components/ShopPage/OrderForm'
 import InfoSection from './components/ShopPage/InfoSection'
 import SubscriptionSection from './components/ShopPage/SubscriptionSection'
+import Signup from './components/Login/Signup'
+import Login from './components/Login/Login'
+import ProductShowcase from './components/Orderpage/ProductShowcase'
+import ProductCardsGrid from './components/Orderpage/ProductCardsGrid'
+import OnDemandSection from './components/Orderpage/OnDemandSection'
+import FeedbackForm from './components/Orderpage/Feedbackform'
+import InstagramGrid from './components/Orderpage/InstagramGrid'
+import CustomerReviewsGrid from './components/Orderpage/CustomerReviewsGrid'
+import Orderfeature from './components/Orderpage/Orderfeature'
 const App = () => {
   return (
    <div>
@@ -65,9 +74,28 @@ const App = () => {
                    <WeHearYou/>
                    <SubscriptionSection/>
 
+                    {/* Sign up screen   */}
+
+   <Signup/>
+   <Login/>
+ {/* order page   */}
+
+ <TiggleNavbar/>
+ <ProductShowcase/>
+ <ProductCardsGrid/>
+ <OnDemandSection/>
+  <WeHearYou/>
+ <FeedbackForm/>
+ <WeHearYou/>
+ <InstagramGrid/>
+ <CustomerReviewsGrid/>
+ <WeHearYou/>
+ <Orderfeature/>
+
 
 
    </div>
+
   )
 }
 
