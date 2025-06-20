@@ -30,6 +30,21 @@ const reviews = [
     text: `Loved the hot chocolate\nIts dark and thick and very tasty\nNo floury aftertaste like others.\nHowever, i didn’t receive the free marshmallows as mentioned in the invoice. Was looking forward to them`,
     avatar: "S",
   },
+  {
+    name: "Shreya",
+    date: "December 30, 2023",
+    rating: 4,
+    text: `Loved the hot chocolate\nIts dark and thick and very tasty\nNo floury aftertaste like others.\nHowever, i didn’t receive the free marshmallows as mentioned in the invoice. Was looking forward to them`,
+    avatar: "S",
+  },
+  {
+    name: "Shreya",
+    date: "December 30, 2023",
+    rating: 4,
+    text: `Loved the hot chocolate\nIts dark and thick and very tasty\nNo floury aftertaste like others.\nHowever, i didn’t receive the free marshmallows as mentioned in the invoice. Was looking forward to them`,
+    avatar: "S",
+  },
+  // You can add 2 more reviews to fill 2 full rows of 3 cards each
 ];
 
 const stars = (count) => {
@@ -41,8 +56,8 @@ const stars = (count) => {
 export default function CustomerReviewsGrid() {
   return (
     <div className="px-4 py-10 bg-gray-100 min-h-screen">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-6xl mx-auto">
-        {reviews.map((review, index) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+        {reviews.slice(0, 6).map((review, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 30 }}

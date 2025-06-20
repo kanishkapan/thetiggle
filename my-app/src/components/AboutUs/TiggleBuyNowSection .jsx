@@ -3,7 +3,7 @@ import React from "react";
 const TiggleBuyNowSection = () => {
   return (
     <section
-      className="w-full bg-white px-4 py-12 flex flex-col items-center justify-center text-center "
+      className="w-full bg-white px-4 mb-16 flex flex-col items-center justify-center text-center "
       style={{ fontFamily: "'Space Grotesk', sans-serif" }}
     >
       <div className="max-w-3xl mb-8 animate-fade-in-up">

@@ -3,19 +3,27 @@ import React from "react";
 export default function ChocolateGallery() {
   const chocolates = [
     {
-      img: "https://via.placeholder.com/300x400?text=Iced+Chocolate",
+      img: "../src/assets/reelsectionimage1.png",
       label: "Iced chocolate",
     },
     {
-      img: "https://via.placeholder.com/300x400?text=Dark+Mix",
+      img: "../src/assets/reelsectionimage2.png",
       label: "Dark mix",
     },
     {
-      img: "https://via.placeholder.com/300x400?text=Dark+Mix",
+      img: "../src/assets/reelsectionimage3.png",
       label: "Dark mix",
     },
     {
-      img: "https://via.placeholder.com/300x400?text=Iced+Chocolate",
+      img: "../src/assets/reelsectionimage4.png",
+      label: "Iced chocolate",
+    },
+    {
+      img: "../src/assets/reelsectionimage4.png",
+      label: "Iced chocolate",
+    },
+    {
+      img: "../src/assets/reelsectionimage4.png",
       label: "Iced chocolate",
     },
   ];

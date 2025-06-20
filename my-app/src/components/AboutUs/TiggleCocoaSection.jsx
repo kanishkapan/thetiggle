@@ -2,7 +2,7 @@ import React from "react";
 
 const TiggleCocoaSection = () => {
   return (
-    <section className="w-full px-2 py-4 bg-white flex flex-col items-center justify-center text-center " >
+    <section className="w-full px-2 mb-16 bg-white flex flex-col items-center justify-center text-center " >
       {/* Paragraph */}
       <div className="max-w-5xl mb-10 animate-fade-in-up">
         <p className="text-lg md:text-xl font-medium text-gray-800 leading-relaxed"  style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
@@ -18,17 +18,17 @@ const TiggleCocoaSection = () => {
       {/* Image Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-6xl w-full animate-fade-in-up delay-200">
         <img
-          src="/your-image-1.jpg"
+          src="../src/assets/farmtomug.png"
           alt="Cocoa 1"
           className="w-full h-auto object-cover rounded-md shadow-md"
         />
         <img
-          src="/your-image-2.jpg"
+          src="../src/assets/farmtomug1.png"
           alt="Cocoa 2"
           className="w-full h-auto object-cover rounded-md shadow-md"
         />
         <img
-          src="/your-image-3.jpg"
+          src="../src/assets/farmtomug3.png"
           alt="Cocoa 3"
           className="w-full h-auto object-cover rounded-md shadow-md"
         />

@@ -1,101 +1,18 @@
 import React from "react";
 
 const products = [
-  {
-    id: 1,
-    title: "Mint Dark Iced Chocolate Mix Sachets",
-    price: "₹299 – ₹409",
-    image: "https://cdn.shopify.com/s/files/1/0571/9193/4261/files/mintdarkiced.webp?v=1685016500",
-  },
-  {
-    id: 2,
-    title: "Iced Chocolate Combo Box — Dark and Mint",
-    price: "₹299 – ₹409",
-    image: "https://cdn.shopify.com/s/files/1/0571/9193/4261/files/combo.webp?v=1685016500",
-  },
-  {
-    id: 3,
-    title: "Hot Chocolate Flavours Bundle",
-    price: "₹999",
-    originalPrice: "₹1200",
-    image: "https://cdn.shopify.com/s/files/1/0571/9193/4261/files/hotbundle.webp?v=1685016500",
-  },
-  {
-    id: 4,
-    title: "Mint Dark Iced Chocolate Limited Edition",
-    price: "₹349 – ₹459",
-    image: "https://cdn.shopify.com/s/files/1/0571/9193/4261/files/mintdarkiced.webp?v=1685016500",
-  },
-  {
-    id: 5,
-    title: "Iced Chocolate Box of 10",
-    price: "₹599",
-    image: "https://cdn.shopify.com/s/files/1/0571/9193/4261/files/combo.webp?v=1685016500",
-  },
-  {
-    id: 6,
-    title: "Winter Hot Chocolate Pack",
-    price: "₹899",
-    originalPrice: "₹1100",
-    image: "https://cdn.shopify.com/s/files/1/0571/9193/4261/files/hotbundle.webp?v=1685016500",
-  },
-  {
-    id: 7,
-    title: "Mint Choco Sachets – 6 Pack",
-    price: "₹249",
-    image: "https://cdn.shopify.com/s/files/1/0571/9193/4261/files/mintdarkiced.webp?v=1685016500",
-  },
-  {
-    id: 8,
-    title: "Combo Box with Free Mug",
-    price: "₹699",
-    image: "https://cdn.shopify.com/s/files/1/0571/9193/4261/files/combo.webp?v=1685016500",
-  },
-  {
-    id: 9,
-    title: "Hot Chocolate Classic Flavours",
-    price: "₹999",
-    originalPrice: "₹1199",
-    image: "https://cdn.shopify.com/s/files/1/0571/9193/4261/files/hotbundle.webp?v=1685016500",
-  },
-  {
-    id: 10,
-    title: "Mint Chocolate Ice Cream Mix",
-    price: "₹329 – ₹399",
-    image: "https://cdn.shopify.com/s/files/1/0571/9193/4261/files/mintdarkiced.webp?v=1685016500",
-  },
-  {
-    id: 11,
-    title: "Deluxe Iced Chocolate Combo",
-    price: "₹899",
-    image: "https://cdn.shopify.com/s/files/1/0571/9193/4261/files/combo.webp?v=1685016500",
-  },
-  {
-    id: 12,
-    title: "Hot Chocolate Variety Pack",
-    price: "₹949",
-    originalPrice: "₹1050",
-    image: "https://cdn.shopify.com/s/files/1/0571/9193/4261/files/hotbundle.webp?v=1685016500",
-  },
-  {
-    id: 13,
-    title: "Mint Chocolate Chiller",
-    price: "₹199 – ₹329",
-    image: "https://cdn.shopify.com/s/files/1/0571/9193/4261/files/mintdarkiced.webp?v=1685016500",
-  },
-  {
-    id: 14,
-    title: "Mega Iced Chocolate Combo Box",
-    price: "₹799",
-    image: "https://cdn.shopify.com/s/files/1/0571/9193/4261/files/combo.webp?v=1685016500",
-  },
-  {
-    id: 15,
-    title: "Hot Chocolate Gift Set",
-    price: "₹1099",
-    originalPrice: "₹1299",
-    image: "https://cdn.shopify.com/s/files/1/0571/9193/4261/files/hotbundle.webp?v=1685016500",
-  },
+  { id: 1, title: "Mint Dark Iced Chocolate Mix Sachets", price: "₹299 – ₹409",        image: "https://images.unsplash.com/photo-1580927752452-12d0d9e9fdbb?auto=format&fit=crop&w=1024&q=80" },
+  { id: 2, title: "Iced Chocolate Combo Box — Dark and Mint", price: "₹299 – ₹409",     image: "https://images.unsplash.com/photo-1602780715885-6cd1660719ea?auto=format&fit=crop&w=1024&q=80" },
+  { id: 3, title: "Hot Chocolate Flavours Bundle", price: "₹999", originalPrice: "₹1200", image: "https://images.unsplash.com/photo-1607082349566-c2b6d9074e9e?auto=format&fit=crop&w=1024&q=80" },
+  { id: 4, title: "Mint Dark Iced Chocolate Limited Edition", price: "₹349 – ₹459",      image: "https://images.unsplash.com/photo-1580927752452-12d0d9e9fdbb?auto=format&fit=crop&w=1024&q=80" },
+  { id: 5, title: "Iced Chocolate Box of 10", price: "₹599",                           image: "https://images.unsplash.com/photo-1602780715885-6cd1660719ea?auto=format&fit=crop&w=1024&q=80" },
+  { id: 6, title: "Winter Hot Chocolate Pack", price: "₹899", originalPrice: "₹1100",    image: "https://images.unsplash.com/photo-1607082349566-c2b6d9074e9e?auto=format&fit=crop&w=1024&q=80" },
+  { id: 7, title: "Mint Choco Sachets – 6 Pack", price: "₹249",                          image: "https://images.unsplash.com/photo-1580927752452-12d0d9e9fdbb?auto=format&fit=crop&w=1024&q=80" },
+  { id: 8, title: "Combo Box with Free Mug", price: "₹699",                             image: "https://images.unsplash.com/photo-1602780715885-6cd1660719ea?auto=format&fit=crop&w=1024&q=80" },
+  { id: 9, title: "Hot Chocolate Classic Flavours", price: "₹999", originalPrice: "₹1199", image: "https://images.unsplash.com/photo-1607082349566-c2b6d9074e9e?auto=format&fit=crop&w=1024&q=80" },
+  { id: 10, title: "Mint Chocolate Ice Cream Mix", price: "₹329 – ₹399",                 image: "https://images.unsplash.com/photo-1580927752452-12d0d9e9fdbb?auto=format&fit=crop&w=1024&q=80" },
+  { id: 11, title: "Deluxe Iced Chocolate Combo", price: "₹899",                        image: "https://images.unsplash.com/photo-1602780715885-6cd1660719ea?auto=format&fit=crop&w=1024&q=80" },
+  { id: 12, title: "Hot Chocolate Variety Pack", price: "₹949", originalPrice: "₹1050",  image: "https://images.unsplash.com/photo-1607082349566-c2b6d9074e9e?auto=format&fit=crop&w=1024&q=80" }
 ];
 
 

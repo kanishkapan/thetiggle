@@ -2,55 +2,91 @@ import React from "react";
 
 const OrderForm = () => {
   return (
-    <div className="flex flex-col md:flex-row min-h-screen bg-[#f9f9f9] p-6 md:p-12 font-[\'Space Grotesk\']">
+    <div className="flex flex-col mb-16 md:flex-row min-h-screen bg-[#f9f9f9] font-['Space_Grotesk']">
       {/* Left Form Section */}
-      <div className="w-full md:w-1/2 flex flex-col justify-center space-y-5 max-w-xl">
-        <label className="text-black text-sm">Name</label>
-        <input
-          type="text"
-          placeholder="Name"
-          className="border border-black rounded-xl p-3 text-sm focus:outline-none"
-        />
+      <div className="w-full md:w-1/2 flex justify-center items-center p-6 sm:p-8 md:p-12">
+        <div className="w-full max-w-lg space-y-6">
+          {/* Name */}
+          <div className="flex flex-col">
+            <label htmlFor="name" className="text-gray-800 text-sm mb-1">
+              Name
+            </label>
+            <input
+              id="name"
+              type="text"
+              placeholder="Name"
+              className="w-full border border-gray-300 rounded-full px-4 py-3 text-sm placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-300"
+            />
+          </div>
 
-        <label className="text-black text-sm">Contact Number</label>
-        <input
-          type="text"
-          placeholder="What to dial to reach to u ?"
-          className="border border-black rounded-xl p-3 text-sm focus:outline-none"
-        />
+          {/* Contact Number */}
+          <div className="flex flex-col">
+            <label htmlFor="contact" className="text-gray-800 text-sm mb-1">
+              Contact Number
+            </label>
+            <input
+              id="contact"
+              type="text"
+              placeholder="What to dial to reach you?"
+              className="w-full border border-gray-300 rounded-full px-4 py-3 text-sm placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-300"
+            />
+          </div>
 
-        <label className="text-black text-sm">Company Name</label>
-        <input
-          type="text"
-          placeholder="Company Name"
-          className="border border-black rounded-xl p-3 text-sm focus:outline-none"
-        />
+          {/* Company Name */}
+          <div className="flex flex-col">
+            <label htmlFor="company" className="text-gray-800 text-sm mb-1">
+              Company Name
+            </label>
+            <input
+              id="company"
+              type="text"
+              placeholder="Company Name"
+              className="w-full border border-gray-300 rounded-full px-4 py-3 text-sm placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-300"
+            />
+          </div>
 
-        <label className="text-black text-sm">What define your the best ?</label>
-        <input
-          type="text"
-          placeholder="Hotel,Cafe,Retail,Distributor,Gifting Fir ?"
-          className="border border-black rounded-xl p-3 text-sm focus:outline-none"
-        />
+          {/* What defines you best? */}
+          <div className="flex flex-col">
+            <label htmlFor="define" className="text-gray-800 text-sm mb-1">
+              What defines you best?
+            </label>
+            <input
+              id="define"
+              type="text"
+              placeholder="Hotel, Cafe, Retail, Distributor, Gifting Firm?"
+              className="w-full border border-gray-300 rounded-full px-4 py-3 text-sm placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-300"
+            />
+          </div>
 
-        <label className="text-black text-sm">Share your requirements</label>
-        <textarea
-          placeholder="Describe order , Any customization you need from us ?"
-          rows="4"
-          className="border border-black rounded-xl p-3 text-sm resize-none focus:outline-none"
-        ></textarea>
+          {/* Requirements */}
+          <div className="flex flex-col">
+            <label htmlFor="requirements" className="text-gray-800 text-sm mb-1">
+              Share your requirements
+            </label>
+            <textarea
+              id="requirements"
+              placeholder="Describe order, any customization you need from us?"
+              rows={4}
+              className="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm placeholder-gray-500 resize-none focus:outline-none focus:ring-2 focus:ring-orange-300"
+            ></textarea>
+          </div>
 
-        <button className="bg-black text-white rounded-xl p-3 mt-2 text-sm hover:bg-gray-800 transition duration-300">
-          Confirm Order
-        </button>
+          {/* Confirm Order Button */}
+          <button
+            type="button"
+            className="w-full bg-black text-white rounded-full py-3 text-sm font-medium hover:bg-gray-800 transition duration-300"
+          >
+            Confirm Order
+          </button>
+        </div>
       </div>
 
       {/* Right Image Section */}
-      <div className="w-full md:w-1/2 mt-12 md:mt-0 flex items-center justify-center">
+      <div className="w-full md:w-1/2 h-64 md:h-auto">
         <img
-          src="/url-to-your-image.png"
-          alt="Decorative Graphic"
-          className="max-w-full h-auto object-contain"
+          src="../src/assets/anuvablog.png"
+          alt="Promo Visual"
+          className="w-full h-full object-cover"
         />
       </div>
     </div>

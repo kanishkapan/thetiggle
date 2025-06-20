@@ -25,7 +25,7 @@ export default function Storycard2() {
   ];
 
   return (
-    <div className="w-full px-4 py-10 bg-white">
+    <div className="w-full px-4 mb-16 bg-white">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {cards.map((card, index) => (
           <div
