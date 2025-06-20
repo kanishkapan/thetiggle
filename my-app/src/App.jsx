@@ -30,6 +30,9 @@ import FeedbackForm from './components/Orderpage/Feedbackform'
 import InstagramGrid from './components/Orderpage/InstagramGrid'
 import CustomerReviewsGrid from './components/Orderpage/CustomerReviewsGrid'
 import Orderfeature from './components/Orderpage/Orderfeature'
+import ChocolateArticles from './components/Blogpage/ChocolateArticles'
+import Blogpageheader from './components/Blogpage/Blogpageheader'
+import Footer from './components/Navbar/Footer'
 const App = () => {
   return (
    <div>
@@ -91,6 +94,13 @@ const App = () => {
  <CustomerReviewsGrid/>
  <WeHearYou/>
  <Orderfeature/>
+
+ {/* blog page   */}
+ <Blogpageheader/>
+ <ChocolateArticles/>
+ <Footer/>
+
+
 
 
 
