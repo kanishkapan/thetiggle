@@ -9,7 +9,7 @@ const Footer = () => {
         <div>
           <div className="mb-4">
             <img
-              src="/path-to-your-tiggle-logo.png" // Replace with actual image URL
+              src="../src/assets/tigglelogo.png" // Replace with actual image URL
               alt="Tiggle Logo"
               className="h-10 mb-2"
             />
@@ -48,16 +48,7 @@ const Footer = () => {
         {/* Instagram Feed */}
         <div>
           <h3 className="text-lg font-bold mb-4 border-b border-gray-600 pb-2">TIGGLE INSTAGRAM</h3>
-          <div className="grid grid-cols-3 gap-2 mb-4">
-            {Array.from({ length: 6 }).map((_, i) => (
-              <img
-                key={i}
-                src={`https://source.unsplash.com/random/80x80?sig=${i}`}
-                alt={`Instagram ${i}`}
-                className="rounded-lg object-cover"
-              />
-            ))}
-          </div>
+         
           <div className="flex items-center gap-2 text-sm">
             <FaInstagram className="text-pink-400" /> @thetiggle_
           </div>

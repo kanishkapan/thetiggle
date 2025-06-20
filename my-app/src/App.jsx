@@ -35,6 +35,7 @@ import Blogpageheader from "./components/Blogpage/Blogpageheader";
 import Footer from "./components/Navbar/Footer";
 import IcedPromoSection from "./components/ShopPage/IcedPromoSection ";
 import ReviewForm from "./components/Orderpage/ReviewForm";
+import Blogheader from "./components/Blogpage/Blogheader";
 const App = () => {
   return (
     <div>
@@ -111,7 +112,7 @@ const App = () => {
       <Orderfeature />
 
       {/* blog page   */}
-      <Blogpageheader />
+      <Blogheader />
       <ChocolateArticles />
       <Footer />
     </div>
