@@ -1,51 +1,54 @@
-import React, { useRef } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import React, { useEffect, useRef } from 'react';
 
 const images = [
-  // Add your image URLs below
-  'https://your-image-url-1.png',
-  'https://your-image-url-2.png',
-  'https://your-image-url-3.png',
+  '../src/assets/imagegaleery1.png',
+  '../src/assets/imagegallery2.png',
+  '../src/assets/imagegallery3.png',
+  '../src/assets/imagegrid1.png',
+  '../src/assets/imagegrid2.png',
+  '../src/assets/imagegrid3.png',
+  '../src/assets/imagegrid4.png',
+  '../src/assets/imagegrid5.png',
 ];
 
 const ImageGalleryScroll = () => {
   const scrollRef = useRef(null);
 
-  const scroll = (direction) => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollBy({
-        left: direction === 'left' ? -300 : 300,
-        behavior: 'smooth',
-      });
-    }
-  };
+  // Auto-scroll logic
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (scrollRef.current) {
+        scrollRef.current.scrollBy({
+          left: 300,
+          behavior: 'smooth',
+        });
+
+        // Optional: loop back to start if near end
+        const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+        if (scrollLeft + clientWidth >= scrollWidth - 10) {
+          scrollRef.current.scrollTo({ left: 0, behavior: 'smooth' });
+        }
+      }
+    }, 3000); // every 3 seconds
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    <div className="w-full bg-white py-10 relative">
-      <div className="absolute left-0 top-1/2 -translate-y-1/2 z-10">
-        <button onClick={() => scroll('left')} className="bg-gray-100 p-2 rounded-full shadow hover:bg-gray-200">
-          <ChevronLeft className="w-6 h-6" />
-        </button>
-      </div>
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 z-10">
-        <button onClick={() => scroll('right')} className="bg-gray-100 p-2 rounded-full shadow hover:bg-gray-200">
-          <ChevronRight className="w-6 h-6" />
-        </button>
-      </div>
-
+    <div className="w-full bg-white py-10">
       <div
         ref={scrollRef}
-        className="flex gap-6 overflow-x-auto scroll-smooth px-10 pb-4 hide-scrollbar"
+        className="flex gap-6 overflow-x-auto px-10 pb-4 scroll-smooth hide-scrollbar"
       >
         {images.map((url, index) => (
           <div
             key={index}
-            className="flex-shrink-0 w-full max-w-xs rounded-lg shadow-md"
+            className="flex-shrink-0 w-[280px] md:w-[320px] h-[400px] rounded-lg overflow-hidden shadow-md"
           >
             <img
               src={url}
               alt={`Slide ${index + 1}`}
-              className="rounded-lg w-full h-auto object-cover"
+              className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
             />
           </div>
         ))}

@@ -11,6 +11,7 @@ import StoryCards from "../components/Landing Page/StoryCards";
 import Para from "../components/Landing Page/Para";
 import Footer from "../components/Navbar/Footer";
 import LandingPage from "../components/Landing Page/LandingPage";
+import ImageGalleryScroll from "../components/Landing Page/ImageGalleryScroll";
 
 const Landingpage = () => {
   return (
@@ -24,24 +25,30 @@ const Landingpage = () => {
         description="You said we do !!"
       />
       <PutYourHandsUp />
-      <WeHearYou heading="#Time_to_choose " description="You pick we pack !" />
+      <WeHearYou heading="#Sip_Sip_Hooray " description="All the steamy news." />
       <BrandLogos />
       <WeHearYou
-        heading="#Roller_coaster_ride  "
-        description="From local stalls to doorstep delight — we've stirred up quite the ride."
+        heading="#Time_to_choose  "
+        description="You pick we pack !"
       />
       <ChocolateGallery />
       <WeHearYou
-        heading="#Sip_the_difference"
-        description="it's a hug in a mug, minus the drama. "
+        heading="#Roller_coaster_ride  "
+        description="From local stalls to doorstep delight — we've stirred up quite the ride. "
       />
       <StoryCards />
       <WeHearYou
-        heading="#Tiggled_with_soul"
-        description="Crafted in small batches with real cocoa, not chemistry."
+        heading="#Sip_the_difference"
+        description="it's a hug in a mug, minus the drama."
       />
       <Para />
+      <WeHearYou heading="#Tiggled_with_soul" description="Crafted in small batches with real cocoa, not chemistry." />
+      <HotChocolateFeatures/>
       <WeHearYou heading="#Science_of_yum" description="You laugh we smile !" />
+      
+      
+
+      <ImageGalleryScroll/>s
       <Footer />
     </div>
   );
