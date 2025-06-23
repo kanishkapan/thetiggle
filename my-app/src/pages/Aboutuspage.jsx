@@ -1,7 +1,7 @@
 import React from 'react'
 import TiggleImage from '../components/AboutUs/TiggleImage'
 import WeHearYou from '../components/Landing Page/WeHearYou'
-import Storycard2 from '../components/AboutUs/storycard2'
+import Storycard2 from './../components/AboutUs/Storycard2'
 import TiggleCocoaSection from '../components/AboutUs/TiggleCocoaSection'
 
 import TiggleBuyNowSection from '../components/AboutUs/TiggleBuyNowSection '
