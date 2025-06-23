@@ -57,61 +57,63 @@ export default function InstagramGrid() {
 
 const itemData = [
   {
-    img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-    title: 'Breakfast',
+    img: 'https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800&h=600&fit=crop',
+    title: 'Coffee Mug',
     rows: 2,
     cols: 2,
   },
   {
-    img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
-    title: 'Burger',
+    img: 'https://cdn.pixabay.com/photo/2017/09/04/18/39/coffee-2714970_1280.jpg',
+    title: 'Chocolate Bar',
   },
   {
-    img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
-    title: 'Camera',
+    img: 'https://cdn.pixabay.com/photo/2024/10/20/14/51/coffee-9135194_1280.jpg',
+    title: 'Chocolate Chunks',
   },
   {
-    img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
-    title: 'Coffee',
+    img: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&h=600&fit=crop',
+    title: 'Roasted Beans',
     cols: 2,
   },
   {
-    img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
-    title: 'Hats',
+    img: 'https://cdn.pixabay.com/photo/2017/05/30/12/20/matcha-2356768_1280.jpg',
+    title: 'Cocoa Powder',
     cols: 2,
   },
   {
-    img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
-    title: 'Honey',
+    img: 'https://cdn.pixabay.com/photo/2014/02/10/11/25/coffee-powder-263354_1280.jpg',
+    title: 'Cold Brew',
     rows: 2,
     cols: 2,
   },
   {
-    img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
-    title: 'Basketball',
+    img: 'https://images.unsplash.com/photo-1551024601-bec78aea704b?w=800&h=600&fit=crop',
+    title: 'Truffles',
   },
   {
-    img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
-    title: 'Fern',
+    img: 'https://cdn.pixabay.com/photo/2016/11/29/13/54/breakfast-1870009_1280.jpg',
+    title: 'Pouring Coffee',
   },
   {
-    img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
-    title: 'Mushrooms',
+    img: 'https://cdn.pixabay.com/photo/2023/11/14/17/58/coffee-8388244_1280.jpg',
+    title: 'Chocolate Dessert',
     rows: 2,
     cols: 2,
   },
   {
-    img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af',
-    title: 'Tomato basil',
+    img: 'https://cdn.pixabay.com/photo/2010/12/13/10/13/chocolate-2554_1280.jpg',
+    title: 'Coffee Setup',
   },
   {
-    img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
-    title: 'Sea star',
+    img: 'https://cdn.pixabay.com/photo/2016/03/24/15/53/chocolate-1277002_1280.jpg',
+    title: 'Chocolate Drink',
   },
   {
-    img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
-    title: 'Bike',
+    img: 'https://cdn.pixabay.com/photo/2016/10/13/11/44/chocolates-1737503_1280.jpg',
+    title: 'Beans and Mug',
     cols: 2,
   },
 ];
+
+
   

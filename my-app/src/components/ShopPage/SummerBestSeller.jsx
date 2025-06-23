@@ -1,19 +1,16 @@
 import React from "react";
-
+import TiggleNavbar from "../Navbar/tiggleNavbar";
 const SummerBestSeller = () => {
   const imageUrl = "../src/assets/bulkorderheader.png";
 
   return (
     <div className="relative w-full bg-white overflow-hidden">
       {/* Floating Navbar */}
-      <div className="absolute top-0 left-0 w-full z-20">
-        <div className="bg-white/80 backdrop-blur-md px-6 md:px-10 py-6 shadow-lg">
-          <h2 className="text-orange-600 font-extrabold text-2xl md:text-4xl tracking-wider">tiggle</h2>
-        </div>
-      </div>
-
+    
+ <TiggleNavbar/>
       {/* Content & Image Section */}
-      <div className="pt-32 pb-16 px-6 sm:px-10 md:px-14 lg:px-20 max-w-screen-xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
+      <div className="pt-20 pb-10 px-4 sm:px-6 md:px-10 lg:px-16 max-w-screen-xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
+
         {/* Text Section */}
         <div className="flex-1 text-center lg:text-left min-h-[400px] flex flex-col justify-center">
           <h1

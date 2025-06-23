@@ -1,7 +1,7 @@
 import React from "react";
-import IcedChocolatePromo from "../components/ShopPage/IcedChocolatePromo";
 import ProductCards from "../components/ShopPage/ProductCards";
 import Footer from "../components/Navbar/Footer";
+import IcedPromoSection from "../components/ShopPage/IcedPromoSection ";
 
 const Productpage = () => {
   return (

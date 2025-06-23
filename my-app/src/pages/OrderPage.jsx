@@ -23,15 +23,30 @@ const OrderPage = () => {
       <ProductShowcase />
      
       <ProductCardsGrid />
-       <WeHearYou />
+        <WeHearYou 
+                 heading="#On_demand !  " 
+                 description="Your wish our duty !" 
+               />
       <OnDemandSection />
-      <WeHearYou />
+       <WeHearYou 
+                heading="#Spill_the_sip  " 
+                description="Loved it? Say it loud. Your mug’s got a story to tell." 
+              />
       <ReviewForm />
-      <WeHearYou />
+      <WeHearYou 
+               heading="#Mouths_Dont_Lie  " 
+               description="Your taste buds know the truth  and they’re screaming more!" 
+             />
       <InstagramGrid />
-       <WeHearYou />
+       <WeHearYou 
+                heading="#ChocoChecked  " 
+                description="Cocoa-lovers approved — read the hype, then sip it." 
+              />
       <CustomerReviewsGrid />
-      <WeHearYou />
+       <WeHearYou 
+                heading="#Tiggled_with_soul  " 
+                description="Crafted in small batches with real cocoa, not chemistry." 
+              />
       <Orderfeature />
       <Footer />
 

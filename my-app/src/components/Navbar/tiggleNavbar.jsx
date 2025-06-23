@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const TiggleNavbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
-    // Load Glory font from Google Fonts
     const link = document.createElement("link");
     link.href =
       "https://fonts.googleapis.com/css2?family=Glory:wght@400;500;600;700&display=swap";
@@ -12,7 +12,6 @@ const TiggleNavbar = () => {
     document.head.appendChild(link);
 
     return () => {
-      // Cleanup: remove the link when component unmounts
       document.head.removeChild(link);
     };
   }, []);
@@ -20,56 +19,61 @@ const TiggleNavbar = () => {
   return (
     <div
       className="w-full px-3 py-4 sm:px-6 lg:px-8 xl:px-12"
-      style={{
-        fontFamily: "Glory, sans-serif",
-         // soft orange glow
-      }}
+      style={{ fontFamily: "Glory, sans-serif" }}
     >
       <div className="bg-white rounded-xl px-4 py-3 sm:px-6 sm:py-4 shadow-lg">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <span className="text-orange-500 text-xl sm:text-2xl font-bold">
-              tiggle
-            </span>
+            <Link to="/">
+              <span className="text-orange-500 text-xl sm:text-2xl font-bold">
+                tiggle
+              </span>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
-            <a
-              href="#"
+            <Link
+              to="/shop"
               className="text-gray-800 hover:text-orange-500 font-medium text-sm xl:text-base transition-colors"
             >
               Shop
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/about"
               className="text-gray-800 hover:text-orange-500 font-medium text-sm xl:text-base transition-colors"
             >
               Our story
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/blog"
               className="text-gray-800 hover:text-orange-500 font-medium text-sm xl:text-base transition-colors"
             >
               Read
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/bulk-order"
               className="text-gray-800 hover:text-orange-500 font-medium text-sm xl:text-base transition-colors"
             >
               Bulk orders
-            </a>
+            </Link>
           </nav>
 
           {/* Desktop Action Buttons */}
           <div className="hidden md:flex items-center space-x-2 lg:space-x-3">
-            <button className="bg-orange-500 text-white px-3 py-2 lg:px-6 lg:py-2 rounded-md font-medium text-xs lg:text-sm hover:bg-orange-600 transition-colors">
+            <Link
+              to="/order"
+              className="bg-orange-500 text-white px-3 py-2 lg:px-6 lg:py-2 rounded-md font-medium text-xs lg:text-sm hover:bg-orange-600 transition-colors"
+            >
               Order Now
-            </button>
-            <button className="bg-orange-500 text-white px-3 py-2 lg:px-6 lg:py-2 rounded-md font-medium text-xs lg:text-sm hover:bg-orange-600 transition-colors">
+            </Link>
+            <Link
+              to="/auth"
+              className="bg-orange-500 text-white px-3 py-2 lg:px-6 lg:py-2 rounded-md font-medium text-xs lg:text-sm hover:bg-orange-600 transition-colors"
+            >
               Pin Us !
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -106,40 +110,46 @@ const TiggleNavbar = () => {
           <div className="py-2 space-y-3">
             {/* Mobile Navigation Links */}
             <div className="space-y-2">
-              <a
-                href="#"
+              <Link
+                to="/shop"
                 className="block text-gray-800 hover:text-orange-500 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors"
               >
                 Shop
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/about"
                 className="block text-gray-800 hover:text-orange-500 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors"
               >
                 Our story
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/blog"
                 className="block text-gray-800 hover:text-orange-500 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors"
               >
                 Read
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/bulk-order"
                 className="block text-gray-800 hover:text-orange-500 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors"
               >
                 Bulk orders
-              </a>
+              </Link>
             </div>
 
             {/* Mobile Action Buttons */}
             <div className="pt-3 border-t border-gray-200 space-y-2">
-              <button className="w-full bg-orange-500 text-white py-2.5 rounded-md font-medium text-sm hover:bg-orange-600 transition-colors">
+              <Link
+                to="/order"
+                className="block w-full bg-orange-500 text-white py-2.5 rounded-md font-medium text-sm text-center hover:bg-orange-600 transition-colors"
+              >
                 Order Now
-              </button>
-              <button className="w-full bg-orange-500 text-white py-2.5 rounded-md font-medium text-sm hover:bg-orange-600 transition-colors">
+              </Link>
+              <Link
+                to="/auth"
+                className="block w-full bg-orange-500 text-white py-2.5 rounded-md font-medium text-sm text-center hover:bg-orange-600 transition-colors"
+              >
                 Pin Us !
-              </button>
+              </Link>
             </div>
           </div>
         </div>

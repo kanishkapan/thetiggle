@@ -27,7 +27,7 @@ const TiggleHeroSection = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Left Content */}
-          <div className="space-y-6">
+          <div className="space-y-6 pt-16">
             <div className="leading-tight" style={{ fontFamily: 'Caveat, cursive' }}>
               <h1 className="text-[2rem] sm:text-[2.5rem] md:text-[3.5rem] lg:text-[3.8rem] xl:text-[4rem] font-black text-black">
                 5 Million Cups & Counting

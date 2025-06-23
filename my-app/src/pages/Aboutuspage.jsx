@@ -20,15 +20,30 @@ const Aboutuspage = () => {
   return (
     <div>
         <TiggleImage />
-      <WeHearYou />
+      <WeHearYou 
+       heading="#Roller_coaster_ride  " 
+       description="From local stalls to doorstep delight — we've stirred up quite the ride." 
+     />
       <Storycard2 />
-      <WeHearYou />
+      <WeHearYou 
+       heading="#From_farm_to_mug" 
+       description="You said we do !!" 
+     />
       <TiggleCocoaSection />
-      <WeHearYou />
+    <WeHearYou 
+     heading="#BuiltDifferentSippedBetter" 
+     description="You said we do !!" 
+   />
       <TiggleBuyNowSection />
-      <WeHearYou />
+    <WeHearYou 
+     heading="#NotesFromTheMaker" 
+     description="From day one to mug one" 
+   />
       <AnuvaBlogSection />
-      <WeHearYou />
+      <WeHearYou 
+       heading="#TeamTiggle" 
+       description="Real people. Real passion. Stirring joy," 
+     />
       <Footer /></div>
   )
 }
